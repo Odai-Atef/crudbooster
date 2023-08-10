@@ -161,7 +161,7 @@
             <?php
             foreach ($columns as $col) {
                 if ($col['visible'] === FALSE) continue;
-                $colname = $col['label'];
+                $colname = __($col['label']);
                 $width = (isset($col['width'])) ?$col['width']: "auto";
 		$style = (isset($col['style'])) ? $col['style']: "";
                 echo "<th width='$width' $style>$colname</th>";
